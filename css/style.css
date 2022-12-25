@@ -126,12 +126,12 @@ body  {
 
 .total {
     margin: 8rem auto 1rem auto;
-    width: 40rem;
+    width: 30rem;
     font-size: 1.4rem;
 }
 .sub-total {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .container-button {
@@ -176,4 +176,7 @@ body  {
     padding-right: 1rem;
     padding-left: 0.3rem;
     margin-top: -.5rem;
+}
+.input-container.ccv {
+    width: 50%;
 }
