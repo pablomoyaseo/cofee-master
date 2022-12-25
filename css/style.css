@@ -1,0 +1,179 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body  {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eff0f0;
+}
+
+.header {
+    background-color: #43281c;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 5rem;
+}
+
+.logo-title {
+    color: #fbf2c0;
+    padding-left: .7rem;
+    font-weight: 400;
+}
+
+.container  {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.squares-container {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-direction: column;
+}
+
+
+@media (min-width: 778px) {
+.squares-container {
+    flex-direction: row;
+}
+.first-column, 
+.second-column {
+    flex-basis: 50%;
+}
+}
+
+
+.square {
+    background-color: #eee1d5;
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: .7rem;
+    -webkit-box-shadow: 2px 4px 14px 0px rgba(191,166,191,1);
+    -moz-box-shadow: 2px 4px 14px 0px rgba(191,166,191,1);
+    box-shadow: 2px 4px 14px 0px rgba(191,166,191,1);;
+}
+
+.square h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #8a5c30;
+    margin: 0 0 2rem 0;
+}
+
+.square ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.square ul li {
+    display: flex;
+    margin: 0 0 2rem 0;
+    padding: 2rem 3rem 2rem 0;
+    font-size: 1.4rem;
+    gap: 1rem;
+    border-bottom: 1px solid #8a5c30;
+}
+
+.square ul li p {
+    margin: 0;
+    padding: .3rem 0;
+}
+
+.stronger-text {
+    font-weight: 700;
+}
+
+.brown-text {
+    color: #8a5c30;
+}
+
+.text-item {
+    flex: 1;
+}
+
+.price {
+    justify-items: flex-end;
+    font-weight: 700;
+}
+
+.small-text {
+    font-size: 1.2rem;
+}
+
+.payment {
+    margin-top: 3rem;
+}
+
+.input-container {
+    margin: 4rem 0 3rem 0;
+    position: relative;
+}
+
+.total {
+    margin: 8rem auto 1rem auto;
+    width: 40rem;
+    font-size: 1.4rem;
+}
+.sub-total {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-button {
+    margin-bottom: 3rem;
+}
+
+.btn-brown {
+    display: block;
+    background-color: #deb993;
+    width: 90%;
+    padding: 1.5rem 0;
+    color: #8a5c30;
+    font-size: 1.4rem;
+    border-radius: 2.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+.btn-brown:hover {
+    background-color: #8a5c30;
+    color: #deb993;
+}
+
+.input-container input {
+    border-radius: 1rem;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    border: 1px solid  #8a5c30;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.input-container label {
+    color: #8a5c30;
+    font-size: 1.2rem;
+    position: absolute;
+    margin-left: 2rem;
+    background-color: #eee1d5;
+    padding-right: 1rem;
+    padding-left: 0.3rem;
+    margin-top: -.5rem;
+}
